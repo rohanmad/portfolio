@@ -44,11 +44,9 @@ export default function Portfolio() {
   }
 
   useEffect(() => {
-    // Load Typed.js script dynamically
     const script = document.createElement("script")
     script.src = "https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"
     script.onload = () => {
-      // Initialize Typed.js after script loads
       if (window.Typed) {
         new window.Typed("#typed-element", {
           strings: [
@@ -69,7 +67,6 @@ export default function Portfolio() {
     document.head.appendChild(script)
 
     return () => {
-      // Cleanup script on unmount
       if (document.head.contains(script)) {
         document.head.removeChild(script)
       }
@@ -258,7 +255,6 @@ export default function Portfolio() {
                   </Badge> */}
                 </CardTitle>
                 <CardDescription className="font-mono text-sm text-muted-foreground">
-                  // the ones that don't make me cry (sometimes)
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -420,7 +416,7 @@ export default function Portfolio() {
                     backend
                   </CardTitle>
                   <CardDescription className="font-mono text-sm text-muted-foreground">
-                    // where the magic actually happens
+                    // where the magic happens
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
