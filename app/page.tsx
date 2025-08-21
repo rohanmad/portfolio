@@ -121,8 +121,6 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* <div className="font-mono text-sm text-muted-foreground mb-4">$ whoami</div> */}
-
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
               <span className="gradient-text">rohan madan</span>
             </h1>
@@ -178,7 +176,6 @@ export default function Portfolio() {
       <section id="about" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            {/* <div className="font-mono text-accent mb-2">&gt; cat about.txt</div> */}
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">about me</h2>
           </div>
 
@@ -237,7 +234,6 @@ export default function Portfolio() {
       <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/5 to-accent/5">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            {/* <div className="font-mono text-accent mb-2">&gt; ls -la skills/</div> */}
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">skills</h2>
             <p className="text-muted-foreground text-lg">my digital toolbox</p>
           </div>
@@ -249,9 +245,6 @@ export default function Portfolio() {
                 <CardTitle className="flex items-center gap-3 text-primary font-mono">
                   <Terminal className="h-6 w-6" />
                   languages
-                  {/* <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30 ml-auto">
-                    8 languages
-                  </Badge> */}
                 </CardTitle>
                 <CardDescription className="font-mono text-sm text-muted-foreground">
                 </CardDescription>
@@ -320,12 +313,6 @@ export default function Portfolio() {
                         <div key={i} className="w-1.5 h-1.5 rounded-full bg-muted"></div>
                       ))}
                     </div>
-                    {/* <div className="ml-auto flex gap-1">
-                      {[...Array(4)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                      ))}
-                      <div className="w-1.5 h-1.5 rounded-full bg-muted"></div>
-                    </div> */}
                   </div>
                   <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary/20">
                     <div className="w-3 h-3 rounded-full bg-primary"></div>
@@ -380,9 +367,6 @@ export default function Portfolio() {
                       <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
                         Vue.js
                       </Badge>
-                      {/* <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        Svelte
-                      </Badge> */}
                     </div>
                   </div>
                   <div>
@@ -394,15 +378,6 @@ export default function Portfolio() {
                       <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
                         Figma
                       </Badge>
-                      {/* <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        Styled Components
-                      </Badge> */}
-                      {/* <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        Framer Motion
-                      </Badge> */}
-                      {/* <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
-                        shadcn/ui
-                      </Badge> */}
                     </div>
                   </div>
                 </CardContent>
@@ -448,12 +423,6 @@ export default function Portfolio() {
                       <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
                         Firebase
                       </Badge>
-                      {/* <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
-                        Redis
-                      </Badge>
-                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        Supabase
-                      </Badge> */}
                     </div>
                   </div>
                 </CardContent>
@@ -493,9 +462,6 @@ export default function Portfolio() {
                   <div>
                     <h4 className="font-mono text-sm text-primary mb-2">specializations</h4>
                     <div className="flex flex-wrap gap-2">
-                      {/* <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        Computer Vision
-                      </Badge> */}
                       <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
                         NLP
                       </Badge>
@@ -524,15 +490,9 @@ export default function Portfolio() {
                       <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
                         AWS
                       </Badge>
-                      {/* <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
-                        Vercel
-                      </Badge> */}
                       <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
                         Docker
                       </Badge>
-                      {/* <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        Kubernetes
-                      </Badge> */}
                     </div>
                   </div>
                   <div>
@@ -541,12 +501,6 @@ export default function Portfolio() {
                       <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
                         Git
                       </Badge>
-                      {/* <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        GitHub Actions
-                      </Badge> */}
-                      {/* <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        VS Code
-                      </Badge> */}
                       <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
                         Postman
                       </Badge>
@@ -559,7 +513,6 @@ export default function Portfolio() {
               </Card>
             </div>
 
-            {/* Fun Stats */}
             <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-accent font-mono">
@@ -601,7 +554,6 @@ export default function Portfolio() {
       <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            {/* <div className="font-mono text-accent mb-2">&gt; git log --oneline</div> */}
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">projects</h2>
             <p className="text-muted-foreground text-lg">stuff i've built</p>
           </div>
@@ -835,7 +787,6 @@ export default function Portfolio() {
 
       <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
         <div className="max-w-4xl mx-auto text-center">
-          {/* <div className="font-mono text-accent mb-2">&gt; ./connect.sh</div> */}
           <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">let's connect</h2>
           <p className="text-muted-foreground text-lg mb-12">
             always down to chat about tech or anything unrelated!
@@ -867,10 +818,6 @@ export default function Portfolio() {
             </Card>
           </div>
 
-          {/* <Button size="lg" className="bg-primary hover:bg-primary/80 neon-border font-mono text-lg px-8">
-            <Coffee className="mr-2 h-5 w-5" />
-            start_conversation()
-          </Button> */}
         </div>
       </section>
 
