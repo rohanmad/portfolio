@@ -638,7 +638,7 @@ export default function Portfolio() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 border-primary/30 text-primary hover:bg-primary/10 font-mono bg-transparent"
+                    className="flex-1 border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 hover:text-primary font-mono bg-transparent"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     code
@@ -651,14 +651,13 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-
-          <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 group">
+            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-105 group">
               <CardHeader>
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
-                  <Zap className="h-16 w-16 text-primary group-hover:text-accent transition-colors" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/10 to-accent/10"></div>
+                <div className="aspect-video bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+                  <Zap className="h-16 w-16 text-secondary group-hover:text-accent transition-colors" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-secondary/10 to-accent/10"></div>
                 </div>
-                <CardTitle className="group-hover:text-primary transition-colors font-mono">eventory</CardTitle>
+                <CardTitle className="group-hover:text-secondary transition-colors font-mono">eventory</CardTitle>
                 <CardDescription className="text-muted-foreground">
                   ai-powered discord bot that automatically detects and tracks academic deadlines, club events, and
                   announcements. uses google gemini to parse natural language into structured calendar data 
@@ -689,19 +688,19 @@ export default function Portfolio() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 border-primary/30 text-primary hover:bg-primary/10 font-mono bg-transparent"
+                    className="flex-1 border-secondary/30 text-secondary hover:bg-secondary/10 hover:border-secondary/50 hover:text-secondary font-mono bg-transparent"
+                    onClick={() => window.open(" https://github.com/ryansoe/diamond-hacks-education", "_blank")}
                   >
                     <Github className="mr-2 h-4 w-4" />
                     code
                   </Button>
-                  <Button size="sm" className="flex-1 bg-primary hover:bg-primary/80 font-mono">
+                  <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/80 font-mono" onClick={() => window.open("https://devpost.com/software/eventory-pnfrq1", "_blank")}>
                     <ExternalLink className="mr-2 h-4 w-4" />
                     demo
                   </Button>
                 </div>
               </CardContent>
             </Card>
-
 
             <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 group">
               <CardHeader>
@@ -733,7 +732,7 @@ export default function Portfolio() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 border-primary/30 text-primary hover:bg-primary/10 font-mono bg-transparent"
+                    className="flex-1 border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 hover:text-primary font-mono bg-transparent"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     code
@@ -753,7 +752,7 @@ export default function Portfolio() {
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-secondary/10 to-primary/10"></div>
                 </div>
                 <CardTitle className="group-hover:text-secondary transition-colors font-mono">
-                  poker tracker
+                  poker buy-in tracker
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">
                   full-stack app for tracking poker games because someone always "forgets" how much they owe. features
@@ -776,7 +775,7 @@ export default function Portfolio() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 border-secondary/30 text-secondary hover:bg-secondary/10 font-mono bg-transparent"
+                    className="flex-1 border-secondary/30 text-secondary hover:bg-secondary/10 hover:border-secondary/50 hover:text-secondary font-mono bg-transparent"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     code
@@ -818,7 +817,7 @@ export default function Portfolio() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 border-accent/30 text-accent hover:bg-accent/10 font-mono bg-transparent"
+                    className="flex-1 border-accent/30 text-accent hover:bg-accent/10 hover:border-accent/50 hover:text-accent font-mono bg-transparent"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     code
@@ -843,7 +842,7 @@ export default function Portfolio() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105">
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105" onClick={() => window.location.href = "mailto:rmadan@ucsd.edu"}>
               <CardContent className="pt-6">
                 <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-mono font-semibold mb-2 text-primary">email</h3>
@@ -851,7 +850,7 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-105">
+            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-105" onClick={() => window.open("https://www.linkedin.com/in/madanrohan/", "_blank")}>
               <CardContent className="pt-6">
                 <Linkedin className="h-12 w-12 text-secondary mx-auto mb-4" />
                 <h3 className="font-mono font-semibold mb-2 text-secondary">linkedin</h3>
@@ -859,7 +858,7 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all hover:scale-105">
+            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all hover:scale-105" onClick={() => window.open("https://github.com/rohanmad", "_blank")}>
               <CardContent className="pt-6">
                 <Github className="h-12 w-12 text-accent mx-auto mb-4" />
                 <h3 className="font-mono font-semibold mb-2 text-accent">github</h3>
