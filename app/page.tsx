@@ -138,29 +138,28 @@ export default function Portfolio() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button size="lg" className="bg-primary hover:bg-primary/80 neon-border font-mono">
+            <a href="/Rohan_Madan_Resume.pdf" download>
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/80 neon-border font-mono"
+              >
                 <Download className="mr-2 h-4 w-4" />
                 download resume
               </Button>
-              {/* <Button
-                variant="outline"
-                size="lg"
-                className="border-accent text-accent hover:bg-accent/10 font-mono bg-transparent"
-              >
-                <Coffee className="mr-2 h-4 w-4" />
-                let's chat
-              </Button> */}
+            </a>
             </div>
 
             <div className="flex justify-center space-x-8">
               <a
                 href="https://linkedin.com/in/madanrohan"
+                target="_blank"
                 className="text-muted-foreground hover:text-primary transition-all hover:scale-110 hover:glow-text"
               >
                 <Linkedin className="h-8 w-8" />
               </a>
               <a
                 href="https://github.com/rohanmad"
+                target="_blank"
                 className="text-muted-foreground hover:text-accent transition-all hover:scale-110 hover:glow-text"
               >
                 <Github className="h-8 w-8" />
