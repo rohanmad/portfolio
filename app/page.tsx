@@ -130,7 +130,7 @@ export default function Portfolio() {
             </div>
             
             <div className="font-mono text-lg md:text-xl gradient-text mb-2">hey, i'm</div>  
-                      
+
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
               <span className="gradient-text">rohan madan</span>
             </h1>
@@ -831,7 +831,7 @@ export default function Portfolio() {
             <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105">
               <CardContent className="pt-6">
                 <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="font-mono font-semibold mb-2 text-primary">phone</h3>
+                <h3 className="font-mono font-semibold mb-2 text-primary">mobile</h3>
                 <p className="text-muted-foreground font-mono text-sm">(858) 280-6220</p>
               </CardContent>
             </Card>
