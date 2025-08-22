@@ -1,5 +1,6 @@
 "use client"
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable-next-line react/jsx-no-comment-textnodes */
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
