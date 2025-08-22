@@ -50,8 +50,8 @@ export default function Portfolio() {
     const script = document.createElement("script")
     script.src = "https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"
     script.onload = () => {
-      if (window.Typed) {
-        new window.Typed("#typed-element", {
+      if ((window as any).Typed) {
+        new (window as any).Typed("#typed-element", {
           strings: [
             "full-stack developer in the making",
             "ai/ml enthusiast",
