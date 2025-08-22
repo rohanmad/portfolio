@@ -43,7 +43,7 @@ export default function Portfolio() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth", block: 'start'})
     }
   }
 
@@ -54,21 +54,22 @@ export default function Portfolio() {
       if ((window as any).Typed) {
         new (window as any).Typed("#typed-element", {
           strings: [
-            "full-stack developer in the making",
-            "ai/ml enthusiast",
-            "building scalable, clean code",
-            "avid tennis player",
-            "your next intern (hopefully)",
-            "learning something new every day",
-            "music enthusiast",
-            "always hunting for the best food spots",
+            " a full-stack developer in the making",
+            " an ai/ml enthusiast",
+            " building scalable, clean code",
+            " an avid tennis player",
+            " learning something new every day",
+            " a music enthusiast",
+            " always hunting for the best food spots",
+            "i'm pursuing a bachelor's in computer science at UCSD",
           ],
-          typeSpeed: 70,
-          backSpeed: 70,
+          typeSpeed: 65,
+          backSpeed: 65,
           loop: true,
-          shuffle: true,
+          startDelay: 3500,
           smartBackspace: true,
           showCursor: true,
+          backDelay: 1000,
         })
       }
     }
@@ -121,21 +122,19 @@ export default function Portfolio() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
         <div className="max-w-6xl mx-auto relative">
           <div className="text-center">
-            <div className="mb-8 relative">
-              <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-primary via-accent to-secondary p-1">
-                <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                  <Terminal className="w-20 h-20 text-primary" />
-                </div>
-              </div>
-            </div>
             
+          <p className="text-xl text-muted-foreground mb-30 max-w-2xl mx-auto"></p>
             <div className="font-mono text-lg md:text-xl gradient-text mb-2">hey! i'm</div>  
 
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
               <span className="gradient-text">rohan madan</span>
             </h1>
 
-            <div className="font-mono text-lg md:text-xl text-accent mb-2">&gt; i'm pursuing a bachelor's in computer science at UCSD</div>
+            <div className="font-mono text-lg md:text-xl text-accent mb-2">
+            &gt; i'm {" "}
+              <span id="typed-element"> pursuing a bachelor's in computer science at UCSD</span>
+            </div>
+
 
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
               
@@ -179,8 +178,8 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="about" className="py-32 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+      <section id="about" className="py-45 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto" id="realabout">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">about me</h2>
           </div>
@@ -269,7 +268,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="skills" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/5 to-accent/5">
+      <section id="skills" className="py-45 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/5 to-accent/5">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">skills</h2>
@@ -589,7 +588,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="projects" className="py-32 px-4 sm:px-6 lg:px-8">
+      <section id="projects" className="py-45 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">projects</h2>
@@ -823,7 +822,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="contact" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
+      <section id="contact" className="py-45 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">let's connect</h2>
           <p className="text-muted-foreground text-lg mb-12">
