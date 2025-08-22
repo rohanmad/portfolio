@@ -54,7 +54,7 @@ export default function Portfolio() {
       if ((window as any).Typed) {
         new (window as any).Typed("#typed-element", {
           strings: [
-            " a full-stack developer in the making",
+            " a future software engineer",
             " an ai/ml enthusiast",
             " building scalable, clean code",
             " an avid tennis player",
@@ -66,7 +66,7 @@ export default function Portfolio() {
           typeSpeed: 65,
           backSpeed: 65,
           loop: true,
-          startDelay: 3500,
+          startDelay: 4500,
           smartBackspace: true,
           showCursor: true,
           backDelay: 1000,
@@ -119,7 +119,7 @@ export default function Portfolio() {
       </nav>
 
       <section className="pt-38 pb-64 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
+        <div className="absolute inset-0  via-transparent "></div>
         <div className="max-w-6xl mx-auto relative">
           <div className="text-center">
             
@@ -179,7 +179,7 @@ export default function Portfolio() {
       </section>
 
       <section id="about" className="pb-64 px-4 sm:px-6 lg:px-8 scroll-mt-22">
-        <div className="max-w-6xl mx-auto" id="realabout">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">about me</h2>
           </div>
@@ -268,7 +268,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="skills" className="pb-64 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/5 to-accent/5 scroll-mt-22">
+      <section id="skills" className="pb-64 px-4 sm:px-6 lg:px-8 scroll-mt-22">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">skills</h2>
@@ -822,11 +822,11 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="contact" className="py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5 scroll-mt-22">
+      <section id="contact" className="py-8 px-4 sm:px-6 lg:px-8 scroll-mt-22">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">let's connect</h2>
           <p className="text-muted-foreground text-lg mb-12">
-            always down to chat about tech or anything unrelated!
+            always open to chat about tech or anything unrelated!
           </p>
 
           <div className="grid md:grid-cols-4 gap-6 mb-12">
