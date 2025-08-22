@@ -822,7 +822,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="contact" className="py-45 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
+      <section id="contact" className="py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">let's connect</h2>
           <p className="text-muted-foreground text-lg mb-12">
@@ -869,7 +869,7 @@ export default function Portfolio() {
 
       <footer className="border-t border-primary/20 py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
-          {/* <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p> */}
+          <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p>
         </div>
       </footer>
 
