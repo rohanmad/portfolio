@@ -867,7 +867,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <footer className="border-t border-primary/20 py-8 px-4 sm:px-6 lg:px-8">
+      <footer className="border-t border-primary/20 py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p>
         </div>
