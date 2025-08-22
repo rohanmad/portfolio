@@ -185,38 +185,15 @@ export default function Portfolio() {
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">about me</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-cente mb-16">
             <div>
-              <Card className="border-2 border-primary/30 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-primary">
-                    <GameController2 className="h-5 w-5" />
-                    current_status.json
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="font-mono text-sm">
-                  <div className="space-y-2">
-                    <div>
-                      <span className="text-accent">"school":</span>{" "}
-                      <span className="text-secondary">"UC San Diego"</span>,
-                    </div>
-                    <div>
-                      <span className="text-accent">"major":</span>{" "}
-                      <span className="text-secondary">"Computer Science"</span>,
-                    </div>
-                    <div>
-                      <span className="text-accent">"year":</span> <span className="text-secondary">"Junior"</span>,
-                    </div>
-                    <div>
-                      <span className="text-accent">"graduation_date":</span> <span className="text-secondary">"2027"</span>,
-                    </div>
-                    <div>
-                      <span className="text-accent">"status":</span>{" "}
-                      <span className="text-primary">"seeking internships"</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="aspect-[3/2] bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center border-2 border-primary/30 hover:border-primary/50 transition-all">
+              <img
+                  src="/placeholder-u6xyz.png"
+                  alt="Placeholder about image"
+                  className="w-full h-full object-cover rounded-lg opacity-70"
+                />
+              </div>
             </div>
 
             {/*TODO:: ADD BETTER ABOUT ME */}
@@ -232,6 +209,60 @@ export default function Portfolio() {
               <p className="text-muted-foreground leading-relaxed">
                 actively looking for swe internships where i can contribute to real products and learn from amazing
                 engineers. let's build something cool together!
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="space-y-6">
+              <p className="text-foreground leading-relaxed text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam.
+              </p>
+            </div>
+
+            <div>
+              <div className="aspect-[3/2] bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center border-2 border-secondary/30 hover:border-secondary/50 transition-all">                <img
+                  src="/about-section-placeholder.png"
+                  alt="Placeholder about image"
+                  className="w-full h-full object-cover rounded-lg opacity-70"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+            <div className="aspect-[3/2] bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center border-2 border-accent/30 hover:border-accent/50 transition-all">               <img
+                  src="/about-section-placeholder-2.png"
+                  alt="Another placeholder about image"
+                  className="w-full h-full object-cover rounded-lg opacity-70"
+                />
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <p className="text-foreground leading-relaxed text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam.
               </p>
             </div>
           </div>
@@ -836,6 +867,13 @@ export default function Portfolio() {
 
         </div>
       </section>
+
+      <footer className="border-t border-primary/20 py-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto text-center">
+          {/* <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p> */}
+        </div>
+      </footer>
+
     </div>
   )
 }
