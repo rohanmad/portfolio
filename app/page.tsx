@@ -129,20 +129,16 @@ export default function Portfolio() {
               </div>
             </div>
             
-            <div className="font-mono text-lg md:text-xl gradient-text mb-2">hey, i'm</div>  
+            <div className="font-mono text-lg md:text-xl gradient-text mb-2">hey! i'm</div>  
 
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
               <span className="gradient-text">rohan madan</span>
             </h1>
 
-            <div className="font-mono text-lg md:text-xl text-accent mb-2">&gt; computer science @ ucsd</div>
-            <div className="font-mono text-lg md:text-xl text-secondary mb-8">
-              &gt; <span id="typed-element" className="text-secondary"></span>
-            </div>
+            <div className="font-mono text-lg md:text-xl text-accent mb-2">&gt; i'm pursuing a bachelor's in computer science at UCSD</div>
 
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-              passionate about ai/ml, full-stack dev, and creating solutions that actually matter. currently looking for
-              swe internships!
+              
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
