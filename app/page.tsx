@@ -61,7 +61,7 @@ export default function Portfolio() {
             " learning something new every day",
             " a music enthusiast",
             " always hunting for the best food spots",
-            "i'm pursuing a bachelor's in computer science at UCSD",
+            " pursuing a bachelor's in computer science at UCSD",
           ],
           typeSpeed: 65,
           backSpeed: 65,
@@ -118,7 +118,7 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      <section className="pt-38 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section className="pt-38 pb-64 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
         <div className="max-w-6xl mx-auto relative">
           <div className="text-center">
@@ -178,7 +178,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="about" className="py-45 px-4 sm:px-6 lg:px-8">
+      <section id="about" className="pb-64 px-4 sm:px-6 lg:px-8 scroll-mt-22">
         <div className="max-w-6xl mx-auto" id="realabout">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">about me</h2>
@@ -268,7 +268,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="skills" className="py-45 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/5 to-accent/5">
+      <section id="skills" className="pb-64 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/5 to-accent/5 scroll-mt-22">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">skills</h2>
@@ -588,7 +588,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="projects" className="py-45 px-4 sm:px-6 lg:px-8">
+      <section id="projects" className="pb-64 px-4 sm:px-6 lg:px-8 scroll-mt-22">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">projects</h2>
@@ -822,7 +822,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="contact" className="py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
+      <section id="contact" className="py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5 scroll-mt-22">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">let's connect</h2>
           <p className="text-muted-foreground text-lg mb-12">
