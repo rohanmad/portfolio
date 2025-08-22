@@ -145,9 +145,9 @@ export default function Portfolio() {
             <a href="https://drive.google.com/file/d/18Zq3hUcrBMz7ibNaWXoFTP5XiMN9b9fq/view?usp=sharing" target='_blank'>
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/80 neon-border font-mono"
+                className="bg-primary hover:bg-primary/80 neon-border font-mono hover:scale-110 hover:glow-text cursor-pointer"
               >
-                <Newspaper className="mr-2 h-4 w-4" />
+                <Newspaper className="mr-2 h-4 w-4"/>
                 view my resume
               </Button>
             </a>
@@ -628,12 +628,12 @@ export default function Portfolio() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 hover:text-primary font-mono bg-transparent"
+                    className="flex-1 border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 hover:text-primary font-mono bg-transparent hover:scale-110 hover:glow-text cursor-pointer"
                   >
-                    <Github className="mr-2 h-4 w-4" />
+                    <Github className="mr-2 h-4 w-4 " />
                     code
                   </Button>
-                  <Button size="sm" className="flex-1 bg-primary hover:bg-primary/80 font-mono">
+                  <Button size="sm" className="flex-1 bg-primary hover:bg-primary/80 font-mono hover:scale-110 hover:glow-text cursor-pointer">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     demo
                   </Button>
@@ -678,13 +678,13 @@ export default function Portfolio() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 border-secondary/30 text-secondary hover:bg-secondary/10 hover:border-secondary/50 hover:text-secondary font-mono bg-transparent"
+                    className="flex-1 border-secondary/30 text-secondary hover:bg-secondary/10 hover:border-secondary/50 hover:text-secondary font-mono bg-transparent hover:scale-110 hover:glow-text cursor-pointer"
                     onClick={() => window.open(" https://github.com/ryansoe/diamond-hacks-education", "_blank")}
                   >
                     <Github className="mr-2 h-4 w-4" />
                     code
                   </Button>
-                  <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/80 font-mono" onClick={() => window.open("https://devpost.com/software/eventory-pnfrq1", "_blank")}>
+                  <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/80 font-mono hover:scale-110 hover:glow-text cursor-pointer" onClick={() => window.open("https://devpost.com/software/eventory-pnfrq1", "_blank")}>
                     <ExternalLink className="mr-2 h-4 w-4" />
                     demo
                   </Button>
@@ -702,7 +702,7 @@ export default function Portfolio() {
                   gym trainer bot
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">
-                  ai-powered fitness buddy that doesn't judge your form (unlike real trainers). gives personalized
+                  ai-powered fitness buddy that doesn't judge your form. gives personalized
                   workouts and tracks your gains 
                 </CardDescription>
               </CardHeader>
@@ -722,12 +722,12 @@ export default function Portfolio() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 hover:text-primary font-mono bg-transparent"
+                    className="flex-1 border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 hover:text-primary font-mono bg-transparent hover:scale-110 hover:glow-text cursor-pointer"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     code
                   </Button>
-                  <Button size="sm" className="flex-1 bg-primary hover:bg-primary/80 font-mono">
+                  <Button size="sm" className="flex-1 bg-primary hover:bg-primary/80 font-mono hover:scale-110 hover:glow-text cursor-pointer">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     demo
                   </Button>
@@ -765,12 +765,12 @@ export default function Portfolio() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 border-secondary/30 text-secondary hover:bg-secondary/10 hover:border-secondary/50 hover:text-secondary font-mono bg-transparent"
+                    className="flex-1 border-secondary/30 text-secondary hover:bg-secondary/10 hover:border-secondary/50 hover:text-secondary font-mono bg-transparent hover:scale-110 hover:glow-text cursor-pointer"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     code
                   </Button>
-                  <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/80 font-mono">
+                  <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/80 font-mono hover:scale-110 hover:glow-text cursor-pointer">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     demo
                   </Button>
@@ -807,12 +807,12 @@ export default function Portfolio() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 border-accent/30 text-accent hover:bg-accent/10 hover:border-accent/50 hover:text-accent font-mono bg-transparent"
+                    className="flex-1 border-accent/30 text-accent hover:bg-accent/10 hover:border-accent/50 hover:text-accent font-mono bg-transparent hover:scale-110 hover:glow-text cursor-pointer"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     code
                   </Button>
-                  <Button size="sm" className="flex-1 bg-accent hover:bg-accent/80 font-mono">
+                  <Button size="sm" className="flex-1 bg-accent hover:bg-accent/80 font-mono hover:scale-110 hover:glow-text cursor-pointer">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     demo
                   </Button>
@@ -831,7 +831,7 @@ export default function Portfolio() {
           </p>
 
           <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105" onClick={() => window.location.href = "mailto:rmadan@ucsd.edu"}>
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.location.href = "mailto:rmadan@ucsd.edu"}>
               <CardContent className="pt-6">
                 <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-mono font-semibold mb-2 text-primary">email</h3>
@@ -839,7 +839,7 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-105" onClick={() => window.open("https://www.linkedin.com/in/madanrohan/", "_blank")}>
+            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/madanrohan/", "_blank")}>
               <CardContent className="pt-6">
                 <Linkedin className="h-12 w-12 text-secondary mx-auto mb-4" />
                 <h3 className="font-mono font-semibold mb-2 text-secondary">linkedin</h3>
@@ -847,7 +847,7 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all hover:scale-105" onClick={() => window.open("https://github.com/rohanmad", "_blank")}>
+            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.open("https://github.com/rohanmad", "_blank")}>
               <CardContent className="pt-6">
                 <Github className="h-12 w-12 text-accent mx-auto mb-4" />
                 <h3 className="font-mono font-semibold mb-2 text-accent">github</h3>
@@ -855,7 +855,7 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105">
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer">
               <CardContent className="pt-6">
                 <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-mono font-semibold mb-2 text-primary">mobile</h3>
