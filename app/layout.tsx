@@ -1,4 +1,4 @@
-import type React from "React"
+import type React from "react"
 import type { Metadata } from "next"
 import { DM_Sans } from "next/font/google"
 import "./globals.css"
