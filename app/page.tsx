@@ -10,6 +10,7 @@ import {
   ExternalLink,
   Download,
   Database,
+  Phone,
   Globe,
   Terminal,
   Zap,
@@ -132,7 +133,7 @@ export default function Portfolio() {
 
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
               passionate about ai/ml, full-stack dev, and creating solutions that actually matter. currently looking for
-              swe internships  🚀
+              swe internships!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -792,7 +793,7 @@ export default function Portfolio() {
             always down to chat about tech or anything unrelated!
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
             <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105" onClick={() => window.location.href = "mailto:rmadan@ucsd.edu"}>
               <CardContent className="pt-6">
                 <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -816,6 +817,15 @@ export default function Portfolio() {
                 <p className="text-muted-foreground font-mono text-sm">@rohanmad</p>
               </CardContent>
             </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105">
+              <CardContent className="pt-6">
+                <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="font-mono font-semibold mb-2 text-primary">phone</h3>
+                <p className="text-muted-foreground font-mono text-sm">(858) 280-6220</p>
+              </CardContent>
+            </Card>
+
           </div>
 
         </div>
