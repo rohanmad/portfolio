@@ -53,11 +53,15 @@ export default function Portfolio() {
           strings: [
             "full-stack developer in the making",
             "ai/ml enthusiast",
-            "i'm a future software engineer",
-            "i'm an avid tennis player",
+            "building scalable, clean code",
+            "avid tennis player",
+            "your next intern (hopefully)",
+            "learning something new every day",
+            "music enthusiast",
+            "always hunting for the best food spots",
           ],
-          typeSpeed: 100,
-          backSpeed: 90,
+          typeSpeed: 70,
+          backSpeed: 70,
           loop: true,
           shuffle: true,
           smartBackspace: true,
@@ -214,6 +218,7 @@ export default function Portfolio() {
               </Card>
             </div>
 
+            {/*TODO:: ADD BETTER ABOUT ME */}
             <div className="space-y-6">
               <p className="text-foreground leading-relaxed text-lg">
                 hey there! 👋 i'm rohan, a motivated cs student at ucsd. currently working
