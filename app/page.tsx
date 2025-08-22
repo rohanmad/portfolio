@@ -18,6 +18,7 @@ import {
   Terminal,
   Zap,
   Coffee,
+  Newspaper,
   Gamepad2Icon as GameController2,
 } from "lucide-react"
 import { useState, useEffect } from "react"
@@ -141,13 +142,13 @@ export default function Portfolio() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <a href="/Rohan_Madan_Resume.pdf" download>
+            <a href="https://drive.google.com/file/d/18Zq3hUcrBMz7ibNaWXoFTP5XiMN9b9fq/view?usp=sharing" target='_blank'>
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/80 neon-border font-mono"
               >
-                <Download className="mr-2 h-4 w-4" />
-                download resume
+                <Newspaper className="mr-2 h-4 w-4" />
+                view my resume
               </Button>
             </a>
             </div>
