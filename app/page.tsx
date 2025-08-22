@@ -128,7 +128,9 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-
+            
+            <div className="font-mono text-lg md:text-xl gradient-text mb-2">hey, i'm</div>  
+                      
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
               <span className="gradient-text">rohan madan</span>
             </h1>
