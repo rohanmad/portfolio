@@ -835,15 +835,6 @@ export default function Portfolio() {
 
         </div>
       </section>
-
-      <footer className="border-t border-primary/20 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground font-mono">
-            © 2025 rohan.dev | built with next.js + tailwind
-          </p>
-          <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p>
-        </div>
-      </footer>
     </div>
   )
 }

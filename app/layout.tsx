@@ -11,7 +11,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "rohan.dev",
+  title: "rohan madan - personal website",
   description: "cs student @ ucsd | building cool stuff | looking for swe internships",
   generator: "v0.app",
 }
