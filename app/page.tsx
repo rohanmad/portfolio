@@ -217,7 +217,7 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-foreground leading-relaxed text-lg">
-              during my time at uc san diego, i’ve also focused on growing as both a developer and collaborator.
+              during my time at uc san diego, i’ve focused on growing as both a developer and collaborator.
               </p>
               <p className="text-muted-foreground leading-relaxed">
               through internships, programs, and organizations like moebius solutions, tech mahindra, nasa’s community college aerospace scholars, and the association of computer machinery,
