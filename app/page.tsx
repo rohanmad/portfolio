@@ -190,7 +190,7 @@ export default function Portfolio() {
             <div>
               <div className="aspect-[3/2] bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center border-2 border-primary/30 hover:border-primary/50 transition-all">
               <img
-                  src="/family-pic.jpg"
+                  src="/family-pic.JPG"
                   alt="rohan as a kid"
                   className="w-full h-full object-cover rounded-lg opacity-70"
                 />
@@ -232,7 +232,7 @@ export default function Portfolio() {
 
             <div>
               <div className="aspect-[3/2] bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center border-2 border-secondary/30 hover:border-secondary/50 transition-all">                <img
-                  src="/hackathon-pic-me.jpg"
+                  src="/hackathon-pic-me.JPG"
                   alt="hackathon pic"
                   className="w-full h-full object-cover rounded-lg opacity-70"
                 />
@@ -243,7 +243,7 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
             <div className="aspect-[3/2] bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center border-2 border-accent/30 hover:border-accent/50 transition-all">               <img
-                  src="/beach-throw.jpg"
+                  src="/beach-throw.JPG"
                   alt="beach football"
                   className="w-full h-full object-cover rounded-lg opacity-70"
                 />
