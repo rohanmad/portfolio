@@ -56,6 +56,7 @@ export default function Portfolio() {
         new (window as any).Typed("#typed-element", {
           strings: [
             " a future software engineer",
+            " a swe intern at moebius solutions",
             " an ai/ml enthusiast",
             " building scalable, clean code",
             " an avid tennis player",
@@ -67,7 +68,7 @@ export default function Portfolio() {
           typeSpeed: 65,
           backSpeed: 65,
           loop: true,
-          startDelay: 4500,
+          startDelay: 3000,
           smartBackspace: true,
           showCursor: true,
           backDelay: 1000,
@@ -142,7 +143,7 @@ export default function Portfolio() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <a href="https://drive.google.com/file/d/18Zq3hUcrBMz7ibNaWXoFTP5XiMN9b9fq/view?usp=sharing" target='_blank'>
+            <a href="https://drive.google.com/file/d/1sAtUvFWBdrrr80l654Z_DvhcjuyHz3qH/view?usp=sharing" target='_blank'>
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/80 neon-border font-mono hover:scale-110 hover:glow-text cursor-pointer"
@@ -189,8 +190,8 @@ export default function Portfolio() {
             <div>
               <div className="aspect-[3/2] bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center border-2 border-primary/30 hover:border-primary/50 transition-all">
               <img
-                  src="/placeholder-u6xyz.png"
-                  alt="Placeholder about image"
+                  src="/family-pic.jpg"
+                  alt="rohan as a kid"
                   className="w-full h-full object-cover rounded-lg opacity-70"
                 />
               </div>
@@ -199,16 +200,16 @@ export default function Portfolio() {
             {/*TODO:: ADD BETTER ABOUT ME */}
             <div className="space-y-6">
               <p className="text-foreground leading-relaxed text-lg">
-                hey there! 👋 i'm rohan, a motivated cs student at ucsd. currently working
-                through my junior year while building random projects.
+                hey there! 👋 i'm rohan, a junior studying computer science at uc san diego, and swe intern at moebius solutions. 
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                when i'm not debugging, you'll find me exploring ai/ml, building full-stack apps, or trying to
-                convince my friends that my latest side project will "definitely be the next big thing."
+                i grew up in vancouver, canada, where my curiosity for how things worked started early.
+                i was the kid who loved taking apart gadgets just to see what was inside, which 
+                eventually turned into a love for technology and problem-solving.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                actively looking for swe internships where i can contribute to real products and learn from amazing
-                engineers. let's build something cool together!
+              in high school, i explored this passion further by joining my school’s ftc robotics team and cyberpatriot club, 
+              experiences that taught me teamwork and creativity, and how rewarding it feels to build something that actually works.
               </p>
             </div>
           </div>
@@ -216,24 +217,23 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-foreground leading-relaxed text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+              during my time at uc san diego, i’ve also focused on growing as both a developer and collaborator.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.
+              through internships, programs, and organizations like moebius solutions, tech mahindra, nasa’s community college aerospace scholars, and the association of computer machinery,
+              i’ve had the chance to apply my skills in professional settings, 
+              from building distributed python systems to designing mission control software for a simulated lunar rover.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam.
+              i’ve also grown a lot through hackathons like ucsd’s diamondhacks, where working under tight 
+              deadlines and experimenting with new tools helped me create projects that connect people and solve problems in innovative ways.
               </p>
             </div>
 
             <div>
               <div className="aspect-[3/2] bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center border-2 border-secondary/30 hover:border-secondary/50 transition-all">                <img
-                  src="/about-section-placeholder.png"
-                  alt="Placeholder about image"
+                  src="/hackathon-pic-me.jpg"
+                  alt="hackathon pic"
                   className="w-full h-full object-cover rounded-lg opacity-70"
                 />
               </div>
@@ -243,26 +243,24 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
             <div className="aspect-[3/2] bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center border-2 border-accent/30 hover:border-accent/50 transition-all">               <img
-                  src="/about-section-placeholder-2.png"
-                  alt="Another placeholder about image"
+                  src="/beach-throw.jpg"
+                  alt="beach football"
                   className="w-full h-full object-cover rounded-lg opacity-70"
                 />
               </div>
             </div>
-
             <div className="space-y-6">
               <p className="text-foreground leading-relaxed text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+              outside of technology, I’m someone who genuinely values connection and exploration.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.
+              i enjoy spending time with friends through late-night hangouts, coffee runs, or spontaneous adventures, 
+              and i believe those shared moments matter as much as any professional achievement. 
+              meeting new people and hearing their stories is something i really value.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam.
+              i also love traveling and hiking, and am always seeking out new places to see and people to meet, 
+              because every experience teaches me something new and keeps life exciting.
               </p>
             </div>
           </div>
