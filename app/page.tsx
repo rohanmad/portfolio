@@ -60,7 +60,6 @@ export default function Portfolio() {
             " an ai/ml enthusiast",
             " building scalable, clean code",
             " an avid tennis player",
-            " learning something new every day",
             " a music enthusiast",
             " always hunting for the best food spots",
             " pursuing a bachelor's in computer science at UCSD",
