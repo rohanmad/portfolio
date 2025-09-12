@@ -142,7 +142,7 @@ export default function Portfolio() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <a href="https://drive.google.com/file/d/1sAtUvFWBdrrr80l654Z_DvhcjuyHz3qH/view?usp=sharing" target='_blank'>
+            <a href="https://drive.google.com/file/d/1m6lrl60FUO_YTLj_J_IQGkqxAS7kC2pu/view?usp=sharing" target='_blank'>
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/80 neon-border font-mono hover:scale-110 hover:glow-text cursor-pointer"
