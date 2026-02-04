@@ -21,11 +21,16 @@ import {
   Newspaper,
   Gamepad2Icon as GameController2,
 } from "lucide-react"
+import LogRocket from "logrocket"
 import { useState, useEffect } from "react"
 
 export default function Portfolio() {
   const [displayText, setDisplayText] = useState("")
   const fullText = "rohan.dev"
+
+  useEffect(() => {
+    LogRocket.init("8fdnjx/rohan-portfolio")
+  }, [])
 
   useEffect(() => {
     let i = 0
