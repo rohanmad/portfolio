@@ -224,9 +224,9 @@ export default function Portfolio() {
               college was where that curiosity met real pressure.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              through internships, programs, and organizations like moebius solutions, tech mahindra, nasa’s community college aerospace scholars, and the association of computer machinery,
-              i’ve had the chance to apply my skills in professional settings, 
-              from building distributed python systems to designing mission control software for a simulated lunar rover.
+              i took a less traditional path into computer science, starting at community college before transferring to uc san diego.
+              at the time, it felt like i was behind. in reality, it forced me to slow down, take ownership of my progress,
+              and learn how to stay disciplined without external structure.
               </p>
               <p className="text-muted-foreground leading-relaxed">
               i’ve also grown a lot through hackathons like ucsd’s diamondhacks, where working under tight 
