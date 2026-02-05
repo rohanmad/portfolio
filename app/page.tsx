@@ -225,12 +225,13 @@ export default function Portfolio() {
               </p>
               <p className="text-muted-foreground leading-relaxed">
               i took a less traditional path into computer science, starting at community college before transferring to uc san diego.
-              at the time, it felt like i was behind. in reality, it forced me to slow down, take ownership of my progress,
-              and learn how to stay disciplined without external structure.
+              at the time, it felt like i was behind. in reality, it forced me to slow down, take 
+              responsibility for my progress, and stay consistent even when no one was watching.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              i’ve also grown a lot through hackathons like ucsd’s diamondhacks, where working under tight 
-              deadlines and experimenting with new tools helped me create projects that connect people and solve problems in innovative ways.
+              at ucsd, finding acm changed everything. being surrounded by people who genuinely cared about building,
+              learning, and helping each other grow gave me a sense of direction. through workshops, projects,
+              and conversations, i learned just as much from the people around me as i did from my classes.
               </p>
             </div>
 
