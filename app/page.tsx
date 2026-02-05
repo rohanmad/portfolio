@@ -26,7 +26,7 @@ import { useState, useEffect } from "react"
 
 export default function Portfolio() {
   const [displayText, setDisplayText] = useState("")
-  const fullText = "rohan.dev"
+  const fullText = "rohanm.net"
 
   useEffect(() => {
     LogRocket.init("8fdnjx/rohan-portfolio")
