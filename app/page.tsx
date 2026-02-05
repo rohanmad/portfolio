@@ -221,7 +221,7 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-foreground leading-relaxed text-lg">
-              college was where that curiosity met real pressure.
+              college is where things started to feel real.
               </p>
               <p className="text-muted-foreground leading-relaxed">
               i took a less traditional path into computer science, starting at community college before transferring to uc san diego.
