@@ -271,385 +271,8 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="skills" className="pb-64 px-4 sm:px-6 lg:px-8 scroll-mt-22">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">skills</h2>
-            <p className="text-muted-foreground text-lg">my digital toolbox</p>
-          </div>
 
-          <div className="grid gap-8">
-            {/* Programming Languages */}
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3 text-primary font-mono">
-                  <Terminal className="h-6 w-6" />
-                  languages
-                </CardTitle>
-                <CardDescription className="font-mono text-sm text-muted-foreground">
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary/20">
-                    <div className="w-3 h-3 rounded-full bg-primary"></div>
-                    <span className="font-mono text-sm">Python</span>
-                    <div className="ml-auto flex gap-1">
-                      {[...Array(5)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 p-3 rounded-lg bg-secondary/10 border border-secondary/20">
-                    <div className="w-3 h-3 rounded-full bg-secondary"></div>
-                    <span className="font-mono text-sm">JavaScript</span>
-                    <div className="ml-auto flex gap-1">
-                      {[...Array(4)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-secondary"></div>
-                      ))}
-                      <div className="w-1.5 h-1.5 rounded-full bg-muted"></div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 p-3 rounded-lg bg-accent/10 border border-accent/20">
-                    <div className="w-3 h-3 rounded-full bg-accent"></div>
-                    <span className="font-mono text-sm">TypeScript</span>
-                    <div className="ml-auto flex gap-1">
-                      {[...Array(4)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                      ))}
-                      <div className="w-1.5 h-1.5 rounded-full bg-muted"></div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary/20">
-                    <div className="w-3 h-3 rounded-full bg-primary"></div>
-                    <span className="font-mono text-sm">Java</span>
-                    <div className="ml-auto flex gap-1">
-                      {[...Array(4)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                      ))}
-                      <div className="w-1.5 h-1.5 rounded-full bg-muted"></div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 p-3 rounded-lg bg-secondary/10 border border-secondary/20">
-                    <div className="w-3 h-3 rounded-full bg-secondary"></div>
-                    <span className="font-mono text-sm">C++</span>
-                    <div className="ml-auto flex gap-1">
-                      {[...Array(3)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-secondary"></div>
-                      ))}
-                      {[...Array(2)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-muted"></div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 p-3 rounded-lg bg-accent/10 border border-accent/20">
-                    <div className="w-3 h-3 rounded-full bg-accent"></div>
-                    <span className="font-mono text-sm">SQL</span>
-                    <div className="ml-auto flex gap-1">
-                      {[...Array(2)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                      ))}
-                      {[...Array(3)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-muted"></div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary/20">
-                    <div className="w-3 h-3 rounded-full bg-primary"></div>
-                    <span className="font-mono text-sm">Go</span>
-                    <div className="ml-auto flex gap-1">
-                      {[...Array(2)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                      ))}
-                      {[...Array(3)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-muted"></div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 p-3 rounded-lg bg-secondary/10 border border-secondary/20">
-                    <div className="w-3 h-3 rounded-full bg-secondary"></div>
-                    <span className="font-mono text-sm">Rust</span>
-                    <div className="ml-auto flex gap-1">
-                      {[...Array(2)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-secondary"></div>
-                      ))}
-                      {[...Array(3)].map((_, i) => (
-                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-muted"></div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Frontend & Backend */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-[1.02] group">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-primary font-mono">
-                    <Globe className="h-6 w-6 group-hover:text-accent transition-colors" />
-                    frontend
-                  </CardTitle>
-                  <CardDescription className="font-mono text-sm text-muted-foreground">
-                    // making pixels look pretty
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-mono text-sm text-primary mb-2">frameworks & libraries</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        React
-                      </Badge>
-                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
-                        Next.js
-                      </Badge>
-                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        Vue.js
-                      </Badge>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-mono text-sm text-secondary mb-2">styling & ui</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
-                        Tailwind CSS
-                      </Badge>
-                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        Figma
-                      </Badge>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-[1.02] group">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-secondary font-mono">
-                    <Database className="h-6 w-6 group-hover:text-accent transition-colors" />
-                    backend
-                  </CardTitle>
-                  <CardDescription className="font-mono text-sm text-muted-foreground">
-                    // where the magic happens
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-mono text-sm text-secondary mb-2">runtime & frameworks</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
-                        Node.js
-                      </Badge>
-                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        Express
-                      </Badge>
-                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        FastAPI
-                      </Badge>
-                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
-                        Django
-                      </Badge>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-mono text-sm text-accent mb-2">databases</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        MongoDB
-                      </Badge>
-                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        PostgreSQL
-                      </Badge>
-                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        Firebase
-                      </Badge>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* AI/ML & DevOps */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all hover:scale-[1.02] group">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-accent font-mono">
-                    <Zap className="h-6 w-6 group-hover:text-primary transition-colors" />
-                    ai_ml
-                  </CardTitle>
-                  <CardDescription className="font-mono text-sm text-muted-foreground">
-                    // teaching machines to be smarter than me
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-mono text-sm text-accent mb-2">frameworks & libraries</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        TensorFlow
-                      </Badge>
-                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        PyTorch
-                      </Badge>
-                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
-                        Scikit-learn
-                      </Badge>
-                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        Pandas
-                      </Badge>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-mono text-sm text-primary mb-2">specializations</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
-                        NLP
-                      </Badge>
-                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        Deep Learning
-                      </Badge>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-[1.02] group">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-primary font-mono">
-                    <Terminal className="h-6 w-6 group-hover:text-accent transition-colors" />
-                    devops
-                  </CardTitle>
-                  <CardDescription className="font-mono text-sm text-muted-foreground">
-                    // making deployments less scary
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-mono text-sm text-primary mb-2">cloud & deployment</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        AWS
-                      </Badge>
-                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        Docker
-                      </Badge>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-mono text-sm text-secondary mb-2">tools & workflow</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
-                        Git
-                      </Badge>
-                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-                        Postman
-                      </Badge>
-                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                        Jira
-                      </Badge>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3 text-accent font-mono">
-                  <Coffee className="h-6 w-6" />
-                  stats
-                  <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30 ml-auto">
-                    live data
-                  </Badge>
-                </CardTitle>
-                <CardDescription className="font-mono text-sm text-muted-foreground">
-                  // the numbers that matter
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary font-mono">200+</div>
-                    <div className="text-sm text-muted-foreground font-mono">commits this year</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-secondary font-mono">5+</div>
-                    <div className="text-sm text-muted-foreground font-mono">projects completed</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-accent font-mono">9000</div>
-                    <div className="text-sm text-muted-foreground font-mono">cups of coffee</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary font-mono">3.85</div>
-                    <div className="text-sm text-muted-foreground font-mono">current gpa</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-  
-
-      <section id="contact" className="py-8 px-4 sm:px-6 lg:px-8 scroll-mt-22">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">let's connect</h2>
-          <p className="text-muted-foreground text-lg mb-12">
-            always open to chat about tech or anything unrelated!
-          </p>
-
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.location.href = "mailto:rmadan@ucsd.edu"}>
-              <CardContent className="pt-6">
-                <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="font-mono font-semibold mb-2 text-primary">email</h3>
-                <p className="text-muted-foreground font-mono text-sm">rmadan@ucsd.edu</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/madanrohan/", "_blank")}>
-              <CardContent className="pt-6">
-                <Linkedin className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="font-mono font-semibold mb-2 text-secondary">linkedin</h3>
-                <p className="text-muted-foreground font-mono text-sm">@madanrohan</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.open("https://github.com/rohanmad", "_blank")}>
-              <CardContent className="pt-6">
-                <Github className="h-12 w-12 text-accent mx-auto mb-4" />
-                <h3 className="font-mono font-semibold mb-2 text-accent">github</h3>
-                <p className="text-muted-foreground font-mono text-sm">@rohanmad</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer">
-              <CardContent className="pt-6">
-                <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="font-mono font-semibold mb-2 text-primary">mobile</h3>
-                <p className="text-muted-foreground font-mono text-sm">(858) 280-6220</p>
-              </CardContent>
-            </Card>
-
-          </div>
-
-        </div>
-      </section>
-
-      <footer className="border-t border-primary/20 py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p>
-        </div>
-      </footer>
-
-    </div>
-  )
-}
-
-/*
-<section id="projects" className="pb-64 px-4 sm:px-6 lg:px-8 scroll-mt-22">
+      <section id="projects" className="pb-64 px-4 sm:px-6 lg:px-8 scroll-mt-22">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">projects</h2>
@@ -883,13 +506,384 @@ export default function Portfolio() {
         </div>
       </section>
 
+      <section id="contact" className="py-8 px-4 sm:px-6 lg:px-8 scroll-mt-22">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">let's connect</h2>
+          <p className="text-muted-foreground text-lg mb-12">
+            always open to chat about tech or anything unrelated!
+          </p>
+
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.location.href = "mailto:rmadan@ucsd.edu"}>
+              <CardContent className="pt-6">
+                <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="font-mono font-semibold mb-2 text-primary">email</h3>
+                <p className="text-muted-foreground font-mono text-sm">rmadan@ucsd.edu</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/madanrohan/", "_blank")}>
+              <CardContent className="pt-6">
+                <Linkedin className="h-12 w-12 text-secondary mx-auto mb-4" />
+                <h3 className="font-mono font-semibold mb-2 text-secondary">linkedin</h3>
+                <p className="text-muted-foreground font-mono text-sm">@madanrohan</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.open("https://github.com/rohanmad", "_blank")}>
+              <CardContent className="pt-6">
+                <Github className="h-12 w-12 text-accent mx-auto mb-4" />
+                <h3 className="font-mono font-semibold mb-2 text-accent">github</h3>
+                <p className="text-muted-foreground font-mono text-sm">@rohanmad</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer">
+              <CardContent className="pt-6">
+                <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="font-mono font-semibold mb-2 text-primary">mobile</h3>
+                <p className="text-muted-foreground font-mono text-sm">(858) 280-6220</p>
+              </CardContent>
+            </Card>
+
+          </div>
+
+        </div>
+      </section>
+
+      <footer className="border-t border-primary/20 py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p>
+        </div>
+      </footer>
+
+    </div>
+  )
+}
+
+
+{/*
+
+<section id="skills" className="pb-64 px-4 sm:px-6 lg:px-8 scroll-mt-22">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">skills</h2>
+            <p className="text-muted-foreground text-lg">my digital toolbox</p>
+          </div>
+
+          <div className="grid gap-8">
+            /* Programming Languages *
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3 text-primary font-mono">
+                  <Terminal className="h-6 w-6" />
+                  languages
+                </CardTitle>
+                <CardDescription className="font-mono text-sm text-muted-foreground">
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary/20">
+                    <div className="w-3 h-3 rounded-full bg-primary"></div>
+                    <span className="font-mono text-sm">Python</span>
+                    <div className="ml-auto flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg bg-secondary/10 border border-secondary/20">
+                    <div className="w-3 h-3 rounded-full bg-secondary"></div>
+                    <span className="font-mono text-sm">JavaScript</span>
+                    <div className="ml-auto flex gap-1">
+                      {[...Array(4)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+                      ))}
+                      <div className="w-1.5 h-1.5 rounded-full bg-muted"></div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg bg-accent/10 border border-accent/20">
+                    <div className="w-3 h-3 rounded-full bg-accent"></div>
+                    <span className="font-mono text-sm">TypeScript</span>
+                    <div className="ml-auto flex gap-1">
+                      {[...Array(4)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                      ))}
+                      <div className="w-1.5 h-1.5 rounded-full bg-muted"></div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary/20">
+                    <div className="w-3 h-3 rounded-full bg-primary"></div>
+                    <span className="font-mono text-sm">Java</span>
+                    <div className="ml-auto flex gap-1">
+                      {[...Array(4)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                      ))}
+                      <div className="w-1.5 h-1.5 rounded-full bg-muted"></div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg bg-secondary/10 border border-secondary/20">
+                    <div className="w-3 h-3 rounded-full bg-secondary"></div>
+                    <span className="font-mono text-sm">C++</span>
+                    <div className="ml-auto flex gap-1">
+                      {[...Array(3)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+                      ))}
+                      {[...Array(2)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-muted"></div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg bg-accent/10 border border-accent/20">
+                    <div className="w-3 h-3 rounded-full bg-accent"></div>
+                    <span className="font-mono text-sm">SQL</span>
+                    <div className="ml-auto flex gap-1">
+                      {[...Array(2)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                      ))}
+                      {[...Array(3)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-muted"></div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary/20">
+                    <div className="w-3 h-3 rounded-full bg-primary"></div>
+                    <span className="font-mono text-sm">Go</span>
+                    <div className="ml-auto flex gap-1">
+                      {[...Array(2)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                      ))}
+                      {[...Array(3)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-muted"></div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg bg-secondary/10 border border-secondary/20">
+                    <div className="w-3 h-3 rounded-full bg-secondary"></div>
+                    <span className="font-mono text-sm">Rust</span>
+                    <div className="ml-auto flex gap-1">
+                      {[...Array(2)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+                      ))}
+                      {[...Array(3)].map((_, i) => (
+                        <div key={i} className="w-1.5 h-1.5 rounded-full bg-muted"></div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Frontend & Backend *
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-[1.02] group">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3 text-primary font-mono">
+                    <Globe className="h-6 w-6 group-hover:text-accent transition-colors" />
+                    frontend
+                  </CardTitle>
+                  <CardDescription className="font-mono text-sm text-muted-foreground">
+                    // making pixels look pretty
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h4 className="font-mono text-sm text-primary mb-2">frameworks & libraries</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
+                        React
+                      </Badge>
+                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
+                        Next.js
+                      </Badge>
+                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
+                        Vue.js
+                      </Badge>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-mono text-sm text-secondary mb-2">styling & ui</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
+                        Tailwind CSS
+                      </Badge>
+                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
+                        Figma
+                      </Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-[1.02] group">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3 text-secondary font-mono">
+                    <Database className="h-6 w-6 group-hover:text-accent transition-colors" />
+                    backend
+                  </CardTitle>
+                  <CardDescription className="font-mono text-sm text-muted-foreground">
+                    // where the magic happens
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h4 className="font-mono text-sm text-secondary mb-2">runtime & frameworks</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
+                        Node.js
+                      </Badge>
+                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
+                        Express
+                      </Badge>
+                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
+                        FastAPI
+                      </Badge>
+                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
+                        Django
+                      </Badge>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-mono text-sm text-accent mb-2">databases</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
+                        MongoDB
+                      </Badge>
+                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
+                        PostgreSQL
+                      </Badge>
+                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
+                        Firebase
+                      </Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* AI/ML & DevOps *
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all hover:scale-[1.02] group">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3 text-accent font-mono">
+                    <Zap className="h-6 w-6 group-hover:text-primary transition-colors" />
+                    ai_ml
+                  </CardTitle>
+                  <CardDescription className="font-mono text-sm text-muted-foreground">
+                    // teaching machines to be smarter than me
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h4 className="font-mono text-sm text-accent mb-2">frameworks & libraries</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
+                        TensorFlow
+                      </Badge>
+                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
+                        PyTorch
+                      </Badge>
+                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
+                        Scikit-learn
+                      </Badge>
+                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
+                        Pandas
+                      </Badge>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-mono text-sm text-primary mb-2">specializations</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
+                        NLP
+                      </Badge>
+                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
+                        Deep Learning
+                      </Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-[1.02] group">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3 text-primary font-mono">
+                    <Terminal className="h-6 w-6 group-hover:text-accent transition-colors" />
+                    devops
+                  </CardTitle>
+                  <CardDescription className="font-mono text-sm text-muted-foreground">
+                    // making deployments less scary
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h4 className="font-mono text-sm text-primary mb-2">cloud & deployment</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
+                        AWS
+                      </Badge>
+                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
+                        Docker
+                      </Badge>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-mono text-sm text-secondary mb-2">tools & workflow</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
+                        Git
+                      </Badge>
+                      <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
+                        Postman
+                      </Badge>
+                      <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
+                        Jira
+                      </Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3 text-accent font-mono">
+                  <Coffee className="h-6 w-6" />
+                  stats
+                  <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30 ml-auto">
+                    live data
+                  </Badge>
+                </CardTitle>
+                <CardDescription className="font-mono text-sm text-muted-foreground">
+                  // the numbers that matter
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary font-mono">200+</div>
+                    <div className="text-sm text-muted-foreground font-mono">commits this year</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-secondary font-mono">5+</div>
+                    <div className="text-sm text-muted-foreground font-mono">projects completed</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-accent font-mono">9000</div>
+                    <div className="text-sm text-muted-foreground font-mono">cups of coffee</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary font-mono">3.85</div>
+                    <div className="text-sm text-muted-foreground font-mono">current gpa</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
 
 
-
-
-
-*/
-
-
-
+*/}
