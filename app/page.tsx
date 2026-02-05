@@ -256,15 +256,15 @@ export default function Portfolio() {
             </div>
             <div className="space-y-6">
               <p className="text-foreground leading-relaxed text-lg">
-              outside of technology, I’m someone who genuinely values connection and exploration.
+              outside of technology, i value connection and exploration.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              i enjoy spending time with friends through late night conversations, food runs, or spontaneous adventures, 
-              and i believe those shared moments matter as much as any professional achievement. 
-              meeting new people and hearing their stories is something i really value.
+              i enjoy spending time with friends through late night conversations, food runs,
+              and spontaneous adventures, and i believe those shared moments matter as much as any
+              professional achievement.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              i also love traveling and hiking, and am always seeking out new places to see and people to meet, 
+              i also love traveling and hiking, and am always seeking out new places to see and people to meet,
               because every experience teaches me something new and keeps life exciting.
               </p>
             </div>
