@@ -147,7 +147,7 @@ export default function Portfolio() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <a href="https://drive.google.com/file/d/1D5u4FuJ6icaCUstNzS3FlRaKu4kKBEKj/view?usp=sharing" target='_blank'>
+            <a href="https://drive.google.com/file/d/1bwROtaBfxwZzlRV-qhvXCtIAWjPIabFQ/view?usp=sharing" target='_blank'>
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/80 neon-border font-mono hover:scale-110 hover:glow-text cursor-pointer"
@@ -591,7 +591,65 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="projects" className="pb-64 px-4 sm:px-6 lg:px-8 scroll-mt-22">
+  
+
+      <section id="contact" className="py-8 px-4 sm:px-6 lg:px-8 scroll-mt-22">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">let's connect</h2>
+          <p className="text-muted-foreground text-lg mb-12">
+            always open to chat about tech or anything unrelated!
+          </p>
+
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.location.href = "mailto:rmadan@ucsd.edu"}>
+              <CardContent className="pt-6">
+                <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="font-mono font-semibold mb-2 text-primary">email</h3>
+                <p className="text-muted-foreground font-mono text-sm">rmadan@ucsd.edu</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/madanrohan/", "_blank")}>
+              <CardContent className="pt-6">
+                <Linkedin className="h-12 w-12 text-secondary mx-auto mb-4" />
+                <h3 className="font-mono font-semibold mb-2 text-secondary">linkedin</h3>
+                <p className="text-muted-foreground font-mono text-sm">@madanrohan</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.open("https://github.com/rohanmad", "_blank")}>
+              <CardContent className="pt-6">
+                <Github className="h-12 w-12 text-accent mx-auto mb-4" />
+                <h3 className="font-mono font-semibold mb-2 text-accent">github</h3>
+                <p className="text-muted-foreground font-mono text-sm">@rohanmad</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer">
+              <CardContent className="pt-6">
+                <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="font-mono font-semibold mb-2 text-primary">mobile</h3>
+                <p className="text-muted-foreground font-mono text-sm">(858) 280-6220</p>
+              </CardContent>
+            </Card>
+
+          </div>
+
+        </div>
+      </section>
+
+      <footer className="border-t border-primary/20 py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p>
+        </div>
+      </footer>
+
+    </div>
+  )
+}
+
+/*
+<section id="projects" className="pb-64 px-4 sm:px-6 lg:px-8 scroll-mt-22">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">projects</h2>
@@ -825,57 +883,13 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="contact" className="py-8 px-4 sm:px-6 lg:px-8 scroll-mt-22">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">let's connect</h2>
-          <p className="text-muted-foreground text-lg mb-12">
-            always open to chat about tech or anything unrelated!
-          </p>
 
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.location.href = "mailto:rmadan@ucsd.edu"}>
-              <CardContent className="pt-6">
-                <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="font-mono font-semibold mb-2 text-primary">email</h3>
-                <p className="text-muted-foreground font-mono text-sm">rmadan@ucsd.edu</p>
-              </CardContent>
-            </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 hover:border-secondary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/madanrohan/", "_blank")}>
-              <CardContent className="pt-6">
-                <Linkedin className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="font-mono font-semibold mb-2 text-secondary">linkedin</h3>
-                <p className="text-muted-foreground font-mono text-sm">@madanrohan</p>
-              </CardContent>
-            </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all hover:scale-105 hover:glow-text cursor-pointer" onClick={() => window.open("https://github.com/rohanmad", "_blank")}>
-              <CardContent className="pt-6">
-                <Github className="h-12 w-12 text-accent mx-auto mb-4" />
-                <h3 className="font-mono font-semibold mb-2 text-accent">github</h3>
-                <p className="text-muted-foreground font-mono text-sm">@rohanmad</p>
-              </CardContent>
-            </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 hover:border-primary/50 transition-all hover:scale-105 hover:glow-text cursor-pointer">
-              <CardContent className="pt-6">
-                <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="font-mono font-semibold mb-2 text-primary">mobile</h3>
-                <p className="text-muted-foreground font-mono text-sm">(858) 280-6220</p>
-              </CardContent>
-            </Card>
 
-          </div>
 
-        </div>
-      </section>
+*/
 
-      <footer className="border-t border-primary/20 py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p>
-        </div>
-      </footer>
 
-    </div>
-  )
-}
+
