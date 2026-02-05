@@ -213,7 +213,7 @@ export default function Portfolio() {
               </p>
               <p className="text-muted-foreground leading-relaxed">
               i didn’t really grow out of that phase—it just became more focused. high school gave me places where curiosity actually felt useful, 
-              and joining my school’s ftc robotics team and cyberpatriot club let me experiment, break things, and learn with other people who were just as invested.
+              and joining my school’s ftc robotics team and cyberpatriot club let me learn with other people who were just as invested.
               </p>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function Portfolio() {
               outside of technology, I’m someone who genuinely values connection and exploration.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              i enjoy spending time with friends through late night conversations, coffee chats, or spontaneous adventures, 
+              i enjoy spending time with friends through late night conversations, food runs, or spontaneous adventures, 
               and i believe those shared moments matter as much as any professional achievement. 
               meeting new people and hearing their stories is something i really value.
               </p>
@@ -553,7 +553,7 @@ export default function Portfolio() {
 
       <footer className="border-t border-primary/20 py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p>
+          {/* <p className="text-muted-foreground/60 font-mono text-sm mt-2">// todo: add more projects</p> */}
         </div>
       </footer>
 
