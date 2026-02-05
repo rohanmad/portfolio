@@ -212,7 +212,7 @@ export default function Portfolio() {
               experimenting, and taking things apart just to see what was inside.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              i didn’t really grow out of that phase—it just became more focused. high school gave me places where curiosity actually felt useful, 
+              i didn’t really grow out of that phase. high school gave me places where curiosity actually felt useful, 
               and joining my school’s ftc robotics team and cyberpatriot club let me learn with other people who were just as invested.
               </p>
             </div>
