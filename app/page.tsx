@@ -201,19 +201,18 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/*TODO:: ADD BETTER ABOUT ME */}
+            {/*TODO:: ADD BETTER ABOUT ME hey there! 👋 */ }
             <div className="space-y-6">
               <p className="text-foreground leading-relaxed text-lg">
-                hey there! 👋 i'm rohan, a junior studying computer science at uc san diego, and swe intern at moebius solutions. 
+                i'm rohan, a junior studying computer science at uc san diego.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                i grew up in vancouver, canada, where my curiosity for how things worked started early.
-                i was the kid who loved taking apart gadgets just to see what was inside, which 
-                eventually turned into a love for technology and problem-solving.
+              i grew up in vancouver, canada, but have been living in san diego since 2010. growing up, 
+              i was constantly curious about how things worked — tinkering, experimenting, and taking things apart just to see what was inside.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              in high school, i explored this passion further by joining my school’s ftc robotics team and cyberpatriot club, 
-              experiences that taught me teamwork and creativity, and how rewarding it feels to build something that actually works.
+              i didn’t really grow out of that phase — it just became more focused. high school gave me places where curiosity actually felt useful, 
+              and joining my school’s ftc robotics team and cyberpatriot club let me experiment, break things, and learn with other people who were just as invested.
               </p>
             </div>
           </div>
@@ -258,7 +257,7 @@ export default function Portfolio() {
               outside of technology, I’m someone who genuinely values connection and exploration.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              i enjoy spending time with friends through late-night hangouts, coffee runs, or spontaneous adventures, 
+              i enjoy spending time with friends through late night conversations, coffee chats, or spontaneous adventures, 
               and i believe those shared moments matter as much as any professional achievement. 
               meeting new people and hearing their stories is something i really value.
               </p>
