@@ -207,11 +207,12 @@ export default function Portfolio() {
                 i'm rohan, a junior studying computer science at uc san diego.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              i grew up in vancouver, canada, but have been living in san diego since 2010. growing up, 
-              i was constantly curious about how things worked — tinkering, experimenting, and taking things apart just to see what was inside.
+              i grew up in vancouver, canada, but have been living in san diego since 2010. growing up,
+              i was constantly curious about how things worked, spending a lot of time tinkering,
+              experimenting, and taking things apart just to see what was inside.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              i didn’t really grow out of that phase — it just became more focused. high school gave me places where curiosity actually felt useful, 
+              i didn’t really grow out of that phase—it just became more focused. high school gave me places where curiosity actually felt useful, 
               and joining my school’s ftc robotics team and cyberpatriot club let me experiment, break things, and learn with other people who were just as invested.
               </p>
             </div>
@@ -220,7 +221,7 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-foreground leading-relaxed text-lg">
-              during my time at uc san diego, i’ve focused on growing as both a developer and collaborator.
+              college was where that curiosity met real pressure.
               </p>
               <p className="text-muted-foreground leading-relaxed">
               through internships, programs, and organizations like moebius solutions, tech mahindra, nasa’s community college aerospace scholars, and the association of computer machinery,
