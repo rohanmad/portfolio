@@ -101,12 +101,12 @@ export default function Portfolio() {
               >
                 ./about
               </button>
-              <button
+              {/* <button
                 onClick={() => scrollToSection("skills")}
                 className="text-muted-foreground hover:text-accent transition-colors hover:glow-text"
               >
                 ./skills
-              </button>
+              </button> */}
               <button
                 onClick={() => scrollToSection("projects")}
                 className="text-muted-foreground hover:text-accent transition-colors hover:glow-text"
