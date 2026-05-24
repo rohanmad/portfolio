@@ -543,7 +543,7 @@ export default function Portfolio() {
               <CardContent className="pt-6">
                 <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-mono font-semibold mb-2 text-primary">mobile</h3>
-                <p className="text-muted-foreground font-mono text-sm">(858) 280-6220</p>
+                <p data-nosnippet className="text-muted-foreground font-mono text-sm">(858) 280-6220</p>
               </CardContent>
             </Card>
 
