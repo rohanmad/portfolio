@@ -1,15 +1,94 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
-import { ExternalLink, Github } from "lucide-react"
+import { ChevronLeft, ChevronRight, ExternalLink, Github } from "lucide-react"
 import { projects, type Project } from "@/lib/data/portfolio"
 import { MagneticButton } from "@/components/ui/magnetic-button"
 import { useReducedMotion } from "@/lib/hooks/use-reduced-motion"
 
-function ProjectDetail({ project }: { project: Project }) {
+function ProjectMedia({ project }: { project: Project }) {
   const Icon = project.icon
+  const images = project.images ?? []
+  const [index, setIndex] = useState(0)
+  const hasMultiple = images.length > 1
 
+  if (images.length === 0) {
+    return (
+      <div className="relative mb-6 flex aspect-[16/9] items-center justify-center overflow-hidden rounded-xl border border-[var(--border-subtle)] bg-[var(--accent-dim)]">
+        <Icon className="h-14 w-14 text-[var(--accent)]" strokeWidth={1} />
+        <div className="absolute inset-0 grid-overlay opacity-30" />
+      </div>
+    )
+  }
+
+  const goPrev = () => setIndex((i) => (i - 1 + images.length) % images.length)
+  const goNext = () => setIndex((i) => (i + 1) % images.length)
+
+  return (
+    <div className="relative mb-6 overflow-hidden rounded-xl border border-[var(--border-subtle)] bg-[var(--surface-elevated)]">
+      <div className="relative aspect-[16/9] w-full">
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={images[index]}
+            className="absolute inset-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Image
+              src={images[index]}
+              alt={`${project.title} preview ${index + 1}`}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 60vw"
+            />
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      {hasMultiple && (
+        <>
+          <button
+            type="button"
+            onClick={goPrev}
+            className="absolute top-1/2 left-2 z-10 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full border border-[var(--border-subtle)] bg-[var(--void)]/80 text-[var(--text-muted)] backdrop-blur-sm transition-colors hover:text-[var(--text-primary)]"
+            aria-label="Previous image"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            onClick={goNext}
+            className="absolute top-1/2 right-2 z-10 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full border border-[var(--border-subtle)] bg-[var(--void)]/80 text-[var(--text-muted)] backdrop-blur-sm transition-colors hover:text-[var(--text-primary)]"
+            aria-label="Next image"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+          <div className="absolute bottom-2.5 left-1/2 z-10 flex -translate-x-1/2 gap-1.5">
+            {images.map((src, i) => (
+              <button
+                key={src}
+                type="button"
+                onClick={() => setIndex(i)}
+                className={`h-1.5 rounded-full transition-all ${
+                  i === index
+                    ? "w-4 bg-[var(--accent)]"
+                    : "w-1.5 bg-[var(--text-dim)] hover:bg-[var(--text-muted)]"
+                }`}
+                aria-label={`Go to image ${i + 1}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  )
+}
+
+function ProjectDetail({ project }: { project: Project }) {
   return (
     <motion.div
       key={project.id}
@@ -19,10 +98,7 @@ function ProjectDetail({ project }: { project: Project }) {
       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
       className="flex h-full flex-col"
     >
-      <div className="relative mb-6 flex aspect-[16/9] items-center justify-center overflow-hidden rounded-xl border border-[var(--border-subtle)] bg-[var(--accent-dim)]">
-        <Icon className="h-14 w-14 text-[var(--accent)]" strokeWidth={1} />
-        <div className="absolute inset-0 grid-overlay opacity-30" />
-      </div>
+      <ProjectMedia project={project} />
 
       <h3 className="mb-3 font-mono text-xl text-[var(--accent)]">{project.title}</h3>
       <p className="mb-5 flex-1 text-sm leading-relaxed text-[var(--text-muted)]">
@@ -40,41 +116,46 @@ function ProjectDetail({ project }: { project: Project }) {
         ))}
       </div>
 
-      {project.links.length > 0 && (
-        <div className="flex gap-3">
-          {project.links.map((link) => (
-            <MagneticButton key={link.label} href={link.href.trim()} target="_blank">
-              <span
-                className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 font-mono text-xs transition-colors ${
-                  link.label === "code"
-                    ? "border-[var(--border-subtle)] text-[var(--text-muted)] hover:border-[var(--border-hover)] hover:text-[var(--text-primary)]"
-                    : "btn-primary"
-                }`}
-              >
-                {link.label === "code" ? (
-                  <Github className="h-4 w-4" />
-                ) : (
-                  <ExternalLink className="h-4 w-4" />
-                )}
-                {link.label}
-              </span>
-            </MagneticButton>
-          ))}
-        </div>
-      )}
+      {(() => {
+        const codeLink = project.links.find((l) => l.label === "code")
+        const demoLink = project.links.find((l) => l.label === "demo")
 
-      {project.links.length === 0 && (
-        <div className="flex gap-3">
-          <span className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-[var(--border-subtle)] px-3 py-2 font-mono text-xs text-[var(--text-dim)]">
-            <Github className="h-3.5 w-3.5" />
-            code
-          </span>
-          <span className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-[var(--border-subtle)] px-3 py-2 font-mono text-xs text-[var(--text-dim)]">
-            <ExternalLink className="h-3.5 w-3.5" />
-            demo
-          </span>
-        </div>
-      )}
+        return (
+          <div className="flex gap-3">
+            {codeLink ? (
+              <div className="min-w-0 flex-1">
+                <MagneticButton href={codeLink.href.trim()} target="_blank" className="w-full">
+                  <span className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg border border-[var(--border-hover)] bg-[var(--surface-hover)] px-3 py-2 font-mono text-xs text-[var(--text-primary)] transition-colors hover:border-[var(--text-muted)] hover:bg-[oklch(0.18_0.02_260)]">
+                    <Github className="h-3.5 w-3.5" />
+                    code
+                  </span>
+                </MagneticButton>
+              </div>
+            ) : (
+              <span className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-[var(--border-subtle)] px-3 py-2 font-mono text-xs text-[var(--text-dim)]">
+                <Github className="h-3.5 w-3.5" />
+                code
+              </span>
+            )}
+
+            {demoLink ? (
+              <div className="min-w-0 flex-1">
+                <MagneticButton href={demoLink.href.trim()} target="_blank" className="w-full">
+                  <span className="btn-primary inline-flex w-full items-center justify-center gap-1.5">
+                    <ExternalLink className="h-3.5 w-3.5" />
+                    demo
+                  </span>
+                </MagneticButton>
+              </div>
+            ) : (
+              <span className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-[var(--border-subtle)] px-3 py-2 font-mono text-xs text-[var(--text-dim)]">
+                <ExternalLink className="h-3.5 w-3.5" />
+                demo
+              </span>
+            )}
+          </div>
+        )
+      })()}
     </motion.div>
   )
 }
@@ -144,7 +225,7 @@ export function ProjectsSection() {
 
           <div className="project-panel min-h-[380px] rounded-xl border border-[var(--border-subtle)] bg-[var(--surface)] p-5 md:p-6">
             <AnimatePresence mode="wait">
-              <ProjectDetail project={activeProject} />
+              <ProjectDetail key={activeProject.id} project={activeProject} />
             </AnimatePresence>
           </div>
         </div>

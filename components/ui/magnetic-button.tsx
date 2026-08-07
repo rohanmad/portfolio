@@ -57,7 +57,12 @@ export function MagneticButton({
 
   if (href) {
     return (
-      <a href={href} target={target} rel={target === "_blank" ? "noopener noreferrer" : undefined}>
+      <a
+        href={href}
+        target={target}
+        rel={target === "_blank" ? "noopener noreferrer" : undefined}
+        className="block w-full"
+      >
         {inner}
       </a>
     )

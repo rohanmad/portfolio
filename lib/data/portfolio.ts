@@ -2,6 +2,7 @@ import {
   Globe,
   Zap,
   Gamepad2Icon as GameController2,
+  Camera,
   type LucideIcon,
 } from "lucide-react"
 
@@ -100,9 +101,32 @@ export type Project = {
   icon: LucideIcon
   accent: "amber" | "violet" | "teal"
   links: ProjectLink[]
+  images?: string[]
 }
 
 export const projects: Project[] = [
+  {
+    id: "rollcall",
+    title: "rollcall",
+    description:
+      "ios-oriented mobile app that turns your camera roll into suggested memories. scan, cluster into events, review drafts, then post and share with friends.",
+    tags: [
+      "Expo",
+      "React Native",
+      "TypeScript",
+      "Supabase",
+      "OpenAI Vision",
+      "AsyncStorage",
+    ],
+    icon: Camera,
+    accent: "teal",
+    links: [
+      {
+        label: "code",
+        href: "https://github.com/rohanmad/RollCall",
+      },
+    ],
+  },
   {
     id: "ucsd-social-app",
     title: "ucsd social app",
@@ -121,6 +145,7 @@ export const projects: Project[] = [
     tags: ["Python", "Gemini AI", "Discord.py", "FastAPI", "MongoDB", "React"],
     icon: Zap,
     accent: "violet",
+    images: ["/eventory-pic.png", "/eventory-homepage.png"],
     links: [
       {
         label: "code",
