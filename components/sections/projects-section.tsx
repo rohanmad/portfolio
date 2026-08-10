@@ -13,12 +13,68 @@ function ProjectMedia({ project }: { project: Project }) {
   const images = project.images ?? []
   const [index, setIndex] = useState(0)
   const hasMultiple = images.length > 1
+  const reducedMotion = useReducedMotion()
 
   if (images.length === 0) {
     return (
       <div className="relative mb-6 flex aspect-[16/9] items-center justify-center overflow-hidden rounded-xl border border-[var(--border-subtle)] bg-[var(--accent-dim)]">
         <Icon className="h-14 w-14 text-[var(--accent)]" strokeWidth={1} />
         <div className="absolute inset-0 grid-overlay opacity-30" />
+      </div>
+    )
+  }
+
+  if (project.mediaLayout === "duo" && images.length >= 2) {
+    return (
+      <div className="relative mb-6 overflow-hidden rounded-xl border border-[var(--border-subtle)] bg-[oklch(0.04_0.01_260)]">
+        <div className="relative aspect-[16/9] w-full">
+          <div
+            className="pointer-events-none absolute inset-0 opacity-70"
+            style={{
+              background:
+                "radial-gradient(ellipse 55% 50% at 55% 55%, oklch(0.72 0.14 235 / 0.12), transparent 70%)",
+            }}
+          />
+          <div className="pointer-events-none absolute inset-0 grid-overlay opacity-[0.04]" />
+
+          {/* homepage — back left, facing forward */}
+          <motion.div
+            className="absolute top-[6%] left-[6%] z-[1] h-[88%] w-[38%]"
+            initial={reducedMotion ? false : { opacity: 0, x: -18, y: 10 }}
+            animate={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div className="relative h-full w-full drop-shadow-[0_18px_36px_oklch(0_0_0/0.55)]">
+              <Image
+                src={images[0]}
+                alt={`${project.title} homepage`}
+                fill
+                className="object-contain object-center"
+                sizes="(max-width: 1024px) 40vw, 260px"
+                priority
+              />
+            </div>
+          </motion.div>
+
+          {/* example post — front right, angled */}
+          <motion.div
+            className="absolute top-[2%] right-[0%] z-[2] h-[98%] w-[56%]"
+            initial={reducedMotion ? false : { opacity: 0, x: 18, y: 10 }}
+            animate={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ duration: 0.55, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div className="relative h-full w-full drop-shadow-[0_26px_48px_oklch(0_0_0/0.7)]">
+              <Image
+                src={images[1]}
+                alt={`${project.title} example memory`}
+                fill
+                className="object-contain object-bottom"
+                sizes="(max-width: 1024px) 50vw, 320px"
+                priority
+              />
+            </div>
+          </motion.div>
+        </div>
       </div>
     )
   }

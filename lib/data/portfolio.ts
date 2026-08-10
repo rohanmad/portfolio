@@ -102,6 +102,7 @@ export type Project = {
   accent: "amber" | "violet" | "teal"
   links: ProjectLink[]
   images?: string[]
+  mediaLayout?: "carousel" | "duo"
 }
 
 export const projects: Project[] = [
@@ -120,6 +121,8 @@ export const projects: Project[] = [
     ],
     icon: Camera,
     accent: "teal",
+    images: ["/rollcall-homepage-front.png", "/rollcall-examplepost.png"],
+    mediaLayout: "duo",
     links: [
       {
         label: "code",

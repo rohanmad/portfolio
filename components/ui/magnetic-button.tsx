@@ -19,14 +19,14 @@ export function MagneticButton({
   onClick,
   href,
   target,
-  strength = 0.25,
+  strength = 0.08,
 }: MagneticButtonProps) {
   const ref = useRef<HTMLDivElement>(null)
   const reducedMotion = useReducedMotion()
   const x = useMotionValue(0)
   const y = useMotionValue(0)
-  const springX = useSpring(x, { stiffness: 300, damping: 20 })
-  const springY = useSpring(y, { stiffness: 300, damping: 20 })
+  const springX = useSpring(x, { stiffness: 250, damping: 28 })
+  const springY = useSpring(y, { stiffness: 250, damping: 28 })
 
   const handleMouse = (event: MouseEvent) => {
     if (reducedMotion || !ref.current) return
@@ -49,7 +49,7 @@ export function MagneticButton({
       onMouseMove={handleMouse}
       onMouseLeave={reset}
       className={className}
-      whileTap={{ scale: 0.97 }}
+      whileTap={{ scale: 0.985 }}
     >
       {children}
     </motion.div>
