@@ -17,7 +17,9 @@ import { useActiveSection } from "@/lib/hooks/use-active-section"
 
 export default function Portfolio() {
   const [commandOpen, setCommandOpen] = useState(false)
-  const activeSection = useActiveSection(navSections.map((s) => s.id))
+  const [activeSection, setActiveSection] = useActiveSection(
+    navSections.map((s) => s.id)
+  )
 
   useEffect(() => {
     LogRocket.init("8fdnjx/rohan-portfolio")
@@ -51,7 +53,11 @@ export default function Portfolio() {
         <ContactSection />
       </main>
 
-      <DockNav activeSection={activeSection} onOpenCommand={openCommand} />
+      <DockNav
+        activeSection={activeSection}
+        onNavigate={setActiveSection}
+        onOpenCommand={openCommand}
+      />
       <CommandPalette open={commandOpen} onClose={closeCommand} />
     </>
   )

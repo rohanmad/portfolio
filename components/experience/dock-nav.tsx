@@ -15,10 +15,11 @@ const icons = {
 
 type DockNavProps = {
   activeSection: string
+  onNavigate: (sectionId: string) => void
   onOpenCommand: () => void
 }
 
-export function DockNav({ activeSection, onOpenCommand }: DockNavProps) {
+export function DockNav({ activeSection, onNavigate, onOpenCommand }: DockNavProps) {
   return (
     <motion.nav
       className="fixed bottom-5 left-1/2 z-50 -translate-x-1/2"
@@ -35,7 +36,10 @@ export function DockNav({ activeSection, onOpenCommand }: DockNavProps) {
           return (
             <motion.button
               key={section.id}
-              onClick={() => scrollToSection(section.id)}
+              onClick={() => {
+                onNavigate(section.id)
+                scrollToSection(section.id)
+              }}
               className={cn(
                 "group relative flex flex-col items-center gap-0.5 rounded-lg px-2.5 py-1.5 transition-colors",
                 isActive

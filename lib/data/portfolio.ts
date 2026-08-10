@@ -3,6 +3,7 @@ import {
   Zap,
   Gamepad2Icon as GameController2,
   Camera,
+  Bot,
   type LucideIcon,
 } from "lucide-react"
 
@@ -127,6 +128,28 @@ export const projects: Project[] = [
       {
         label: "code",
         href: "https://github.com/rohanmad/RollCall",
+      },
+    ],
+  },
+  {
+    id: "pokemon-red-rl-agent",
+    title: "pokemon red rl agent",
+    description:
+      "ppo agent that learns to play pokémon red through pyboy + gymnasium. custom env, ram-mapped rewards, and stable-baselines3 training.",
+    tags: [
+      "Python",
+      "PPO",
+      "Stable-Baselines3",
+      "Gymnasium",
+      "PyBoy",
+      "TensorBoard",
+    ],
+    icon: Bot,
+    accent: "amber",
+    links: [
+      {
+        label: "code",
+        href: "https://github.com/rohanmad/Pokemon-Red-RL-Agent",
       },
     ],
   },

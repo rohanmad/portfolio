@@ -4,29 +4,46 @@ import { useEffect, useState } from "react"
 
 export function useActiveSection(sectionIds: string[]) {
   const [activeSection, setActiveSection] = useState(sectionIds[0] ?? "hero")
+  const idsKey = sectionIds.join(",")
 
   useEffect(() => {
-    const observers: IntersectionObserver[] = []
+    const ids = idsKey.split(",").filter(Boolean)
+    if (ids.length === 0) return
 
-    sectionIds.forEach((id) => {
-      const element = document.getElementById(id)
-      if (!element) return
+    const updateActive = () => {
+      const scrollBottom = window.scrollY + window.innerHeight
+      const docHeight = document.documentElement.scrollHeight
 
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setActiveSection(id)
-          }
-        },
-        { rootMargin: "-40% 0px -40% 0px", threshold: 0 }
-      )
+      // Last section often can't reach the marker line — pin it when near page end
+      if (scrollBottom >= docHeight - 80) {
+        setActiveSection(ids[ids.length - 1])
+        return
+      }
 
-      observer.observe(element)
-      observers.push(observer)
-    })
+      const marker = window.innerHeight * 0.35
+      let current = ids[0]
 
-    return () => observers.forEach((observer) => observer.disconnect())
-  }, [sectionIds])
+      for (const id of ids) {
+        const element = document.getElementById(id)
+        if (!element) continue
+        const { top, bottom } = element.getBoundingClientRect()
+        if (top <= marker && bottom > marker) {
+          current = id
+        }
+      }
 
-  return activeSection
+      setActiveSection(current)
+    }
+
+    updateActive()
+    window.addEventListener("scroll", updateActive, { passive: true })
+    window.addEventListener("resize", updateActive)
+
+    return () => {
+      window.removeEventListener("scroll", updateActive)
+      window.removeEventListener("resize", updateActive)
+    }
+  }, [idsKey])
+
+  return [activeSection, setActiveSection] as const
 }
