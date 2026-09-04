@@ -1,9 +1,9 @@
 import {
   Globe,
   Zap,
-  Gamepad2Icon as GameController2,
   Camera,
   Bot,
+  Route,
   type LucideIcon,
 } from "lucide-react"
 
@@ -108,6 +108,29 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "adaptive-router",
+    title: "adaptive router",
+    description:
+      "ai sdk that routes each prompt to a small local model, large local model, or cloud api based on difficulty and sensitivity. one api call, every decision logged with a plain-english reason",
+    tags: [
+      "Python",
+      "TypeScript",
+      "spaCy",
+      "SQLite",
+      "OpenAI",
+      "GGUF",
+    ],
+    icon: Route,
+    accent: "violet",
+    images: ["/ai-sdk-dashboard.png"],
+    links: [
+      {
+        label: "code",
+        href: "https://github.com/rohanmad/ai-sdk",
+      },
+    ],
+  },
+  {
     id: "rollcall",
     title: "rollcall",
     description:
@@ -146,6 +169,7 @@ export const projects: Project[] = [
     ],
     icon: Bot,
     accent: "amber",
+    images: ["/pokemon-8-agent.png"],
     links: [
       {
         label: "code",
@@ -191,16 +215,6 @@ export const projects: Project[] = [
     tags: ["Python", "ML", "FastAPI"],
     icon: Zap,
     accent: "amber",
-    links: [],
-  },
-  {
-    id: "poker-buy-in-tracker",
-    title: "poker buy-in tracker",
-    description:
-      'full-stack app for tracking poker games because someone always "forgets" how much they owe. features real-time stats and payment tracking',
-    tags: ["React", "Node.js", "MongoDB"],
-    icon: GameController2,
-    accent: "violet",
     links: [],
   },
   {
